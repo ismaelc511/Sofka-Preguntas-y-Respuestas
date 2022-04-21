@@ -1,0 +1,38 @@
+<div class="container p-4">
+    <div class="row">
+
+        {{#each questions}}
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p class="card-title text-uppercase text-dark">
+                            {{round}}
+                        </p>
+                        <p class="card-title text-uppercase text-dark">
+                            {{category}}
+                        </p>
+                        <p class="card-title text-uppercase text-dark">
+                            {{question}}
+                        </p>
+                        <p class="card-title text-uppercase text-dark">
+                            {{answer}}
+                        </p>
+                        <p class="card-title text-uppercase text-dark">
+                            {{incorrect1}}
+                        </p>
+                        <p class="card-title text-uppercase text-dark">
+                            {{incorrect2}}
+                        </p>
+                        <p class="card-title text-uppercase text-dark">
+                            {{incorrect3}}
+                        </p>
+                        <img src="{{image}}" alt="image"/>
+                        <a href='/links/Showquestions' class='btn btn-secondary my-2'>Next</a>
+                        
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+
+    </div>
+</div>

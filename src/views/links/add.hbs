@@ -1,0 +1,34 @@
+<header class="container">
+    <nav>
+      <h1 class='mx-auto'>Quiz Start</h1>
+
+    </nav>
+  </header>
+
+  <div class="container">
+    <form class='form' action='/links/add' method="POST">
+      <div class="form-header">
+        <h3>Register</h3>
+      </div>
+
+      <label>Nombre</label>
+      <input id="inputNombre" type="text" name='firstName'>
+
+      <label>Apellido</label>
+      <input id="inputApellido"  type="text" name='lastName'>
+
+      <label>Tipo de premio</label>
+      <select id="selectorPremio" type="selection" name= 'typeOfAward' onchange="showSelected()" >
+					<option selected="selected" disabled="disabled" value="elija su opción">Elija su opcion</option>
+					<option id="dinero" value="dinero">Dinero</option>
+  				<option id="puntos" value="puntos">Puntos</option>
+			</select>
+
+
+      <button type="submit">Ingresar al juego</button>
+    </form>
+
+    <div class="ingresarA">
+      
+    </div>
+  </div>

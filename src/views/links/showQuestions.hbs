@@ -1,0 +1,30 @@
+<header class="container">
+    <nav>
+      <h1 class='mx-auto'>Quiz Start</h1>
+
+    </nav>
+  </header>
+
+  <div class="container">
+    <form class='form' action='/showQuestions' method="GET">
+      <div class="form-header">
+        <h1>Question {{questions.id}}</h1>
+      </div>
+      <div>
+          <h3>{{questions.round}}</h3>
+          <h3>{{questions.category}}</h3>
+      </div>
+      <div>
+      <p>{{questions.question}}</p>
+      </div>
+      <ul class='list-unstyled'>
+          <li>{{questions.answer}}</li>
+          <li>{{questions.incorrect1}}</li>
+          <li>{{questions.incorrect2}}</li>
+          <li>{{questions.incorrect3}}</li>
+      </ul>
+      
+      <button type="button">Next</button>
+    </form>
+      
+    </div>
