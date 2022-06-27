@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 const pool = require('../database');
+/*const { isLoggedIn } = require('../lib/auth');*/
 
-router.get('/questions', async (req, res) => {
+router.get('/questions',/*isLoggedIn,*/ async (req, res) => {
     const questions = await pool.query('SELECT id, round, category, question, answer, incorrect1, incorrect2, incorrect3, image FROM questions WHERE id=1')
     console.log(questions)
     res.render('links/questions', { questions });

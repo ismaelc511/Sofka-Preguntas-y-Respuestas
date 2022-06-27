@@ -1,9 +1,9 @@
-<div class="container p-4">
-    <div class="row">
+<div class="container p-4 mw-100">
+    <div class="row mx-4 justify-content-center">
         {{#each questions}}
-            <div class="col-md-3">
+            <div class="col-md-9 align-items-center justify-content-center">
                 <div class="card text-center">
-                    <div class="card-body">
+                    <div class="card-body align-items-center justify-content-center">
                         <p class="card-title text-uppercase text-dark">
                             {{round}}
                         </p>
@@ -11,34 +11,35 @@
                             {{category}}
                         </p>
                         <div "card-body">
-                        <img src="{{image}}" alt="image" width="200px" height="200px"/>
+                        <img src="{{image}}" alt="image" width="700px" height="400px"/>
                         </div>
                         <p class="card-title text-uppercase text-dark">
                             {{question}}
                         </p>
+                        <div class="card-body">
                         <div>
-                        <button type="button" class="btn btn-primary px-5 my-2">
+                        <button type="button" class="btn btn-primary container-fluid my-8 m-2">
                             {{answer}}
                         </button>
                         </div>
                         <div>
-                        <button type="button" class="btn btn-primary px-5 my-2">
+                        <button type="button" class="btn btn-primary container-fluid my-8 m-2">
                             {{incorrect1}}
                         </button>
                         </div>
                         <div>
-                        <button type="button" class="btn btn-primary px-5 my-2">
+                        <button type="button" class="btn btn-primary container-fluid my-8 m-2">
                             {{incorrect2}}
                         </button>
                         </div>
                         <div>
-                        <button type="button" class="btn btn-primary px-5 my-2 ">
+                        <button type="button" class="btn btn-primary container-fluid my-8 m-2">
                             {{incorrect3}}
                         </button>
                         </div>
-                        
-                        <a href='/links/Showquestions' class='btn btn-secondary mx-12 my-2 px-5'>Next</a>
-                        
+                        </div>
+
+                        <a href="links/questions/{1}" class='btn btn-success mx-12 my-2 px-5'>Next</a>
                     </div>
                 </div>
             </div>
